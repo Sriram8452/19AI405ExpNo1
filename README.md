@@ -79,15 +79,15 @@ class VacuumCleanerAgent:
         """Move to the next location"""
         print("Moving...")
         self.location = (self.location + 1) % len(self.environment)
-def main():
-    agent = VacuumCleanerAgent()
-    print("Initial environment:", agent.environment)
-    for _ in range(len(agent.environment)):
-        percept = agent.sense()
-        print("Percept:", percept)
-        agent.act(percept)
-    print("Environment after cleaning:", agent.environment)
-if __name__ == "__main__":
-    main()
+    def main():
+        agent = VacuumCleanerAgent()
+        print("Initial environment:", agent.environment)
+        for _ in range(len(agent.environment)):
+           percept = agent.sense()
+           print("Percept:", percept)
+           agent.act(percept)
+        print("Environment after cleaning:", agent.environment)
+    if __name__ == "__main__":
+       main()
 ```
 <H5>OUTPUT</H5>
