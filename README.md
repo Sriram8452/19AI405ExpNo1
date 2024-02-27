@@ -79,9 +79,6 @@ class VacuumCleanerAgent:
         """Move to the next location"""
         print("Moving...")
         self.location = (self.location + 1) % len(self.environment)
-
-
-# Main function to test the agent
 def main():
     agent = VacuumCleanerAgent()
     print("Initial environment:", agent.environment)
@@ -90,8 +87,6 @@ def main():
         print("Percept:", percept)
         agent.act(percept)
     print("Environment after cleaning:", agent.environment)
-
-
 if __name__ == "__main__":
     main()
 ```
