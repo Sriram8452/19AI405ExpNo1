@@ -54,23 +54,24 @@
 
 ## PROGRAM
 '''
-class VacuumCleanerAgent:
-    def __init__(self):
-        self.location = 0  # Current location of the vacuum cleaner
-        self.environment = ['Clean', 'Dirty', 'Clean']  # Example environment, you can customize as needed
 
-    def sense(self):
+    class VacuumCleanerAgent:
+      def __init__(self):
+         self.location = 0  # Current location of the vacuum cleaner
+         self.environment = ['Clean', 'Dirty', 'Clean']  # Example environment, you can customize as needed
+
+     def sense(self):
         """Sense the current location"""
         return self.environment[self.location]
 
-    def act(self, percept):
+     def act(self, percept):
         """Act based on the percept"""
         if percept == 'Dirty':
             self.clean()
         else:
             self.move()
 
-    def clean(self):
+     def clean(self):
         """Clean the current location"""
         print("Cleaning...")
         self.environment[self.location] = 'Clean'
@@ -90,4 +91,5 @@ class VacuumCleanerAgent:
     if __name__ == "__main__":
        main()
 ```
-<b>OUTPUT:</b>
+
+## OUTPUT:
