@@ -23,7 +23,7 @@
     <tr>
     <td><strong>Vacuum Cleaning</strong></td>
     <td><strong>Cleaning Agent</strong></td>
-     <td><strong>Rooma</strong></td>
+     <td><strong>Rooms</strong></td>
     <td><strong>Vacuum Cleaners</strong></td>
     <td><strong>Dust Sensors</strong></td>
   </tr>
