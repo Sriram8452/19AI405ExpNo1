@@ -54,7 +54,6 @@
 
 ## PROGRAM
 '''
-
     class VacuumCleanerAgent:
       def __init__(self):
          self.location = 0  # Current location of the vacuum cleaner
@@ -92,4 +91,5 @@
        main()
 ```
 
-## OUTPUT:
+
+<h3>OUTPUT</h3>
