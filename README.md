@@ -9,7 +9,7 @@
 <br>
 <h3>Theory</h3>
 <h3>Medicine prescribing agent:</h3>
-<p>Such this agent prescribes medicine for fever (greater than 98.5 degrees) which we consider here as unhealthy, by the user temperature input, and another environment is rooms in the hospital (two rooms). This agent has to consider two factors one is room location and an unhealthy patient in a random room, the agent has to move from one room to another to check and treat the unhealthy person. The performance of the agent is calculated by incrementing performance and each time after treating in one room again it has to check another room so that the movement causes the agent to reduce its performance. Hence, agents prescribe medicine to unhealthy.</p>
+<p></p>
 <hr>
 <h3>PEAS DESCRIPTION:</h3>
 <table>
@@ -21,22 +21,34 @@
     <td><strong>Sensors</strong></td>
   </tr>
     <tr>
-    <td><strong>Medicine prescribing agent</strong></td>
-    <td><strong>Treating unhealthy, agent movement</strong></td>
-     <td><strong>Rooms, Patient</strong></td>
-    <td><strong>Medicine, Treatment</strong></td>
-    <td><strong>Location, Temperature of patient</strong></td>
+    <td><strong>Vacuum Cleaning</strong></td>
+    <td><strong>Cleaning Agent</strong></td>
+     <td><strong>Rooma</strong></td>
+    <td><strong>Vacuum Cleaners</strong></td>
+    <td><strong>Dust Sensors</strong></td>
   </tr>
 </table>
 <hr>
 <H3>DESIGN STEPS</H3>
-<h3>STEP 1:Identifying the input:</h3>
-<p>Temperature from patients, Location.</p>
-<h3>STEP 2:Identifying the output:</h3>
-<p>Prescribe medicine if the patient in a random has a fever.</p>
-<h3>STEP 3:Developing the PEAS description:</h3>
-<p>PEAS description is developed by the performance, environment, actuators, and sensors in an agent.</p>
-<h3>STEP 4:Implementing the AI agent:</h3>
-<p>Treat unhealthy patients in each room. And check for the unhealthy patients in random room</p>
-<h3>STEP 5:</h3>
-<p>Measure the performance parameters: For each treatment performance incremented, for each movement performance decremented</p>
+<h3>Define the Environment:</h3> 
+<p>Understand the environment in which the vacuum cleaner operates. This includes identifying the size and layout of the environment, the locations of dirt, and any obstacles or boundaries.</p>
+
+<h3>Define Percepts and Actions:</h3>
+<p>Determine what the vacuum cleaner can perceive and how it can act in the environment. Percepts may include information about the cleanliness of the current location, while actions may include moving to adjacent locations or cleaning the current location.</p>
+
+<h3>Choose a Representation:</h3>
+<p>Decide how to represent the state of the environment and the actions of the vacuum cleaner. This could be done using data structures such as arrays, grids, or graphs.</p>
+<h3>Select an Algorithm:</h3> 
+<p>Choose an appropriate algorithm for the vacuum cleaner agent. Common algorithms include Simple Reflex Agents, Model-Based Reflex Agents, Goal-Based Agents, and Utility-Based Agents. The choice of algorithm depends on factors such as the complexity of the environment and the desired level of autonomy.</p>
+
+<h3>Implement the Agent:</h3>
+<p>Implement the vacuum cleaner agent according to the chosen algorithm. This involves writing code to handle percepts, make decisions based on those percepts, and execute actions in the environment.</p>
+
+<h3>Test and Evaluate:</h3>
+<p>Test the agent in various environments to ensure that it behaves as expected and effectively cleans the environment. Evaluate its performance based on criteria such as cleanliness achieved, efficiency of movement, and robustness to different environments.</p>
+
+<h3>Refine and Optimize:</h3>
+<p>Iterate on the design and implementation of the agent to improve its performance and efficiency. This may involve refining the algorithm, optimizing code, or incorporating additional features such as learning mechanisms./p>
+
+<h3>Deployment and Maintenance:</h3>
+<p>Deploy the agent in real-world environments, such as robotic vacuum cleaners in homes or commercial settings. Monitor its performance and address any issues that arise through maintenance and updates.</p>
