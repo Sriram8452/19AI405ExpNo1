@@ -2,13 +2,12 @@
 <h3>Name: Saravanan N</h3>
 <h3>Register Number/Staff Id: TSML006</h3>
 
-
 <h3>AIM:</h3>
 <br>
 <p>To find the PEAS description for the given AI problem and develop an AI agent.</p>
 <br>
 <h3>Theory</h3>
-<h3>Medicine prescribing agent:</h3>
+<h3>Vacuum Cleaning Agent:</h3>
 <p></p>
 <hr>
 <h3>PEAS DESCRIPTION:</h3>
