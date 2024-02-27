@@ -51,3 +51,48 @@
 
 <h3>Deployment and Maintenance:</h3>
 <p>Deploy the agent in real-world environments, such as robotic vacuum cleaners in homes or commercial settings. Monitor its performance and address any issues that arise through maintenance and updates.</p>
+
+<H4>PROGRAM</H4>
+'''
+class VacuumCleanerAgent:
+    def __init__(self):
+        self.location = 0  # Current location of the vacuum cleaner
+        self.environment = ['Clean', 'Dirty', 'Clean']  # Example environment, you can customize as needed
+
+    def sense(self):
+        """Sense the current location"""
+        return self.environment[self.location]
+
+    def act(self, percept):
+        """Act based on the percept"""
+        if percept == 'Dirty':
+            self.clean()
+        else:
+            self.move()
+
+    def clean(self):
+        """Clean the current location"""
+        print("Cleaning...")
+        self.environment[self.location] = 'Clean'
+
+    def move(self):
+        """Move to the next location"""
+        print("Moving...")
+        self.location = (self.location + 1) % len(self.environment)
+
+
+# Main function to test the agent
+def main():
+    agent = VacuumCleanerAgent()
+    print("Initial environment:", agent.environment)
+    for _ in range(len(agent.environment)):
+        percept = agent.sense()
+        print("Percept:", percept)
+        agent.act(percept)
+    print("Environment after cleaning:", agent.environment)
+
+
+if __name__ == "__main__":
+    main()
+```
+<H5>OUTPUT</H5>
